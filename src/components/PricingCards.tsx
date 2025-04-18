@@ -30,11 +30,11 @@ const PricingCards = () => {
       ].map((plan) => (
         <div
           key={plan.title}
-          className={`relative rounded-2xl p-8 ${
+          className={`relative rounded-2xl p-8 border-2 ${
             plan.popular
-              ? "bg-purple-900 text-white scale-105 animate-pulse-border"
-              : "bg-white"
-          } shadow-xl`}
+              ? "bg-purple-900 text-white scale-105 border-purple-500 animate-pulse-border"
+              : "bg-white border-transparent"
+          } shadow-xl transition-all duration-300`}
         >
           {plan.popular && (
             <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-purple-800 text-white px-4 py-1 rounded-full text-sm">

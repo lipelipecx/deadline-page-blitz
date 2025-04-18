@@ -86,8 +86,12 @@ export default {
 					}
 				},
         'pulse-border': {
-          '0%, 100%': { borderColor: 'rgba(139, 92, 246, 0.3)' },
-          '50%': { borderColor: 'rgba(139, 92, 246, 1)' },
+          '0%, 100%': { 
+            borderColor: 'rgba(139, 92, 246, 0.3)' 
+          },
+          '50%': { 
+            borderColor: 'rgba(139, 92, 246, 1)' 
+          },
         }
 			},
 			animation: {
