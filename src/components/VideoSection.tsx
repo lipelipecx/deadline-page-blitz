@@ -1,5 +1,5 @@
-
 import { useState, useEffect, useRef } from 'react';
+import LiveComment from './LiveComment';
 
 const VideoSection = ({ onVideoProgress }: { onVideoProgress: (seconds: number) => void }) => {
   const [viewerCount, setViewerCount] = useState(245);
@@ -44,11 +44,14 @@ const VideoSection = ({ onVideoProgress }: { onVideoProgress: (seconds: number) 
           allowFullScreen
         ></iframe>
       </div>
-      <div className="mt-4 flex items-center justify-center gap-2">
-        <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-        <p className="text-gray-600">
-          <span className="font-semibold">{viewerCount}</span> pessoas assistindo agora
-        </p>
+      <div className="mt-4 flex flex-col items-center justify-center gap-2">
+        <div className="flex items-center gap-2">
+          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+          <p className="text-gray-600">
+            <span className="font-semibold">{viewerCount}</span> pessoas assistindo agora
+          </p>
+        </div>
+        <LiveComment />
       </div>
     </div>
   );
