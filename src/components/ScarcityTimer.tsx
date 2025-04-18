@@ -27,8 +27,11 @@ const ScarcityTimer = () => {
   }, []);
 
   return (
-    <div className="bg-red-600 text-white py-3 px-4 rounded-lg inline-block">
-      <span className="font-mono text-xl">{timeLeft}</span>
+    <div className="bg-gradient-to-r from-purple-900 to-purple-700 text-white py-3 px-4">
+      <div className="container mx-auto flex items-center justify-center gap-2">
+        <p className="text-lg">Este vídeo estará disponível apenas até hoje:</p>
+        <span className="font-mono text-xl">{timeLeft}</span>
+      </div>
     </div>
   );
 };

@@ -9,22 +9,22 @@ import {
 const FaqSection = () => {
   const faqs = [
     {
-      question: "How long do I have access to the content?",
-      answer: "You have lifetime access to all content after purchase.",
+      question: "Por quanto tempo tenho acesso ao conteúdo?",
+      answer: "Você tem acesso vitalício a todo o conteúdo após a compra.",
     },
     {
-      question: "What payment methods do you accept?",
-      answer: "We accept all major credit cards, PayPal, and other secure payment methods.",
+      question: "Quais formas de pagamento vocês aceitam?",
+      answer: "Aceitamos todos os cartões de crédito principais, PIX e outras formas de pagamento seguras.",
     },
     {
-      question: "Can I get a refund if I'm not satisfied?",
-      answer: "Yes, we offer a 30-day money-back guarantee if you're not completely satisfied.",
+      question: "Posso pedir reembolso se não ficar satisfeito?",
+      answer: "Sim, oferecemos garantia de devolução do dinheiro em 30 dias se você não ficar completamente satisfeito.",
     },
   ];
 
   return (
     <div className="max-w-2xl mx-auto">
-      <h3 className="text-2xl font-bold text-center mb-8">Frequently Asked Questions</h3>
+      <h3 className="text-2xl font-bold text-center mb-8">Perguntas Frequentes</h3>
       <Accordion type="single" collapsible>
         {faqs.map((faq, index) => (
           <AccordionItem key={index} value={`item-${index}`}>
